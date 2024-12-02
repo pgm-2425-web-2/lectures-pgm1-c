@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  padding: 0;
+  gap: 1rem;
+  list-style-type: none;
+  grid-template-columns: 5fr 3fr 1fr;
+  grid-template-rows: 2fr 5fr;
+}
+
+.grid__item {
+  background-color: cyan;
+}
