@@ -1,0 +1,24 @@
+li {
+  background: yellow;
+  list-style-type: none;
+}
+
+li::before {
+  content: "•••• ";
+}
+
+.item:not(.first) {
+  background: green;
+}
+
+.other-item {
+  background: red;
+}
+
+.other-item:has(span) {
+  background: orange;
+}
+
+li:nth-child(3n) {
+  border: 1px solid black;
+}
