@@ -1,0 +1,95 @@
+.btn {
+  background-color: blue;
+  padding: 1rem;
+  color: white;
+  border: none;
+
+  transition: all 0.2s ease-in 0.4s;
+
+  &:hover {
+    background-color: cyan;
+    color: black;
+    transform: rotate(260deg);
+  }
+
+  &.active {
+    background-color: yellow;
+    color: black;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    color: green;
+    transform: translate(20px, 30px) rotate(0);
+  }
+  50% {
+    color: blue;
+    transform: translate(-20px, 380px) rotate(180deg);
+  }
+  100% {
+    color: green;
+    transform: translate(200px, 30px) rotate(360deg);
+  }
+}
+
+.h1 {
+  position: absolute;
+  left: 30%;
+  text-align: center;
+  margin: 10rem auto;
+  font-size: 5rem;
+  animation: rotate 1s infinite linear;
+}
+
+.h1--alt {
+  left: 10%;
+  top: 40%;
+  animation-delay: 0.2s;
+}
+
+.h1--alt-2 {
+  left: 50%;
+  top: 60%;
+  animation-delay: 0.5s;
+}
+
+@keyframes bg {
+  0% {
+    background: yellow;
+  }
+  10% {
+    background: orange;
+  }
+  20% {
+    background: red;
+  }
+  30% {
+    background: purple;
+  }
+  40% {
+    background: blue;
+  }
+  50% {
+    background: green;
+  }
+  60% {
+    background: yellow;
+  }
+  70% {
+    background: orange;
+  }
+  80% {
+    background: red;
+  }
+  90% {
+    background: purple;
+  }
+  100% {
+    background: yellow;
+  }
+}
+
+body {
+  animation: bg 0.5s infinite linear;
+}

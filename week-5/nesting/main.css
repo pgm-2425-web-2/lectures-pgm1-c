@@ -1,0 +1,48 @@
+.h1 span {
+  color: red;
+}
+
+.h1.bold {
+  font-weight: bold;
+}
+
+.h1 {
+  color: black;
+  font-size: 2rem;
+
+  span {
+    color: red;
+  }
+
+  @media (min-width: 50rem) {
+    font-size: 4rem;
+
+    span {
+      color: orange;
+    }
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: green;
+  }
+
+  & + .description {
+    text-decoration: underline;
+  }
+}
+
+p span {
+  color: blue;
+}
+
+p {
+  color: black;
+
+  span {
+    color: blue;
+  }
+}
