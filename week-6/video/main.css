@@ -1,0 +1,17 @@
+.video {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
